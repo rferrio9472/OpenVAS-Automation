@@ -1,0 +1,27 @@
+## Install OpenVAS
+```python
+import subprocess
+
+# Update system packages and install OpenVAS
+subprocess.run(['sudo', 'apt', 'update'])
+subprocess.run(['sudo', 'apt', 'install', 'openvas', '-y'])
+```
+## Setup OpenVAS
+```python
+# Initial OpenVAS setup
+subprocess.run(['sudo', 'gvm-setup'])
+```
+
+# 3. Starting OpenVAS Services
+```python
+# Start OpenVAS services
+subprocess.run(['sudo', 'gvm-start'])
+
+import subprocess
+
+# WARNING: These commands must be run in a terminal with sudo privileges
+try:
+    subprocess.run(['sudo', 'apt', 'update'], check=True)
+    subprocess.run(['sudo', 'apt', 'install', 'openvas', '-y'], check=True)
+except subprocess.CalledProcessError:
+    print("Error occurred during installation. Please ensure you have the proper permissions.")
