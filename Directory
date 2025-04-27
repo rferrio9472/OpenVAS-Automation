@@ -1,0 +1,7 @@
+/Automated-Vulnerability-Scanning-OpenVAS
+├── README.md
+├── run_scan.sh
+├── setup_instructions.md
+├── screenshots/
+│   ├── scan-results.png
+│   └── openvas-dashboard.png
