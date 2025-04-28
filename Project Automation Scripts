@@ -1,0 +1,11 @@
+#!/bin/bash
+
+Email Script: send_report.sh
+
+EMAIL="r.ferrio9472@student.nu.edu"
+REPORT="/path/to/report.pdf"
+
+echo "Please find attached the OpenVAS vulnerability scan report." | mail -s "OpenVAS Scan Report" -a "$REPORT" "$EMAIL"
+
+Make the script executable:
+chmod +x send_report.sh
